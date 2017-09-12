@@ -1,6 +1,6 @@
-frontend-nanodegree-arcade-game
-===============================
+This is the Arcade game instructions on how to run and play the game
+first of all to get started you need to open the 'Index' File it will open up a website for you that starts the game after that the rules of the game is to reach the top of the zone in order to do that you have to use the arrow keys which are "Right , Left , Up , Down" in your keyboard you have to move up towards the sea and avoid the enemies coming "Notice that the enemies will move sometimes faster than you think keep that in mind!" 
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
-
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+This is all you need to know on how to play 
+ 
+Good Luck and keep winning ! :D
