@@ -74,7 +74,7 @@ Player.prototype.update = function(dt) {
      }
       // check if player reached the top to win
      if (this.y < 0){
-     player.reset();
+     this.reset();
      }
      
 };
