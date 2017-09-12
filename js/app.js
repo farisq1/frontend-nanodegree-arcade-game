@@ -38,9 +38,6 @@ Enemy.prototype.update = function(dt) {
     // which will ensure the game runs at the same speed for
     // all computers.
 
-
-
-
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
@@ -65,8 +62,6 @@ var Player = function(x,y,speed){
 Player.prototype.update = function(dt) {
    
     //to stop the player from moving outside the zone
-
-
     if(this.y > 380) {
         this.y = 380;
      }
@@ -82,10 +77,6 @@ Player.prototype.update = function(dt) {
      player.reset();
      }
      
-
-
-    
-      
 };
 
 
@@ -99,36 +90,31 @@ Player.prototype.reset = function () {
     this.y = 380;
     };
 
+Player.prototype.handleInput = function (key) {
+    switch (key) {
+        case 'left' :
+        this.x -= 101;
 
-    Player.prototype.handleInput = function (key) {
-switch (key) {
-    case 'left' :
-    this.x -= 101;
+        break;
 
-break;
-    case 'right' : 
-    this.x += 101;
+        case 'right' : 
+        this.x += 101;
 
-    break;
-    case 'up' :
-    this.y -= 83;
+        break;
 
-    break;
+        case 'up' :
+        this.y -= 83;
 
-    case 'down':
-    this.y += 83;
+        break;
+
+        case 'down':
+        this.y += 83;
 }
-
-
-    
 };
-
-
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 var allEnemies = [];
-
 // enemies will be created in the position Y
 var enemyPosition = [50, 140, 230];
 var player = new Player(200, 380, 50);
@@ -138,8 +124,6 @@ enemyPosition.forEach(function(posY) {
     enemy = new Enemy(0, posY, 100 + Math.floor(Math.random() * 512));
     allEnemies.push(enemy);
 });
-
-
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {
